@@ -45,7 +45,7 @@ const Dashboard: React.FC = () => {
     api
       .get(`providers/${user.id}/month-availability`, {
         params: {
-          year: currentMonth.getFullYear,
+          year: currentMonth.getFullYear(),
           month: currentMonth.getMonth() + 1,
         },
       })
